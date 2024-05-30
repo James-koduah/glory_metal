@@ -1,10 +1,22 @@
 <nav id="nav1">
     <div id="nav1_left">
-        <p id="nav1_logo">GLORY METAL WORKS</p>
+        <img src="/images/logo2.png" alt="">
+        <a href="/" id="nav1_logo">GLORY METAL WORKS</a>
     </div>
     <div id="nav1_right">
-        <a href="">WHERE WE WORK</a>
-        <a href="">PROJECTS</a>
-        <a href="" class="cta">CONTACT US</a>
+        <div class="nav_dropdown_p">
+            <header>WHERE WE WORK</header>
+            <div class="nav_dropdown">
+                <p>Greater Accra</p>
+                <p>Volta Region</p>
+                <p>Central Region</p>
+                <p>Ashanti Region</p>
+                <p>Brong Ahafo</p>
+            </div>
+        </div>
+        <!-- <a href="">PROJECTS</a> -->
+        {% if page.cta %}
+        <a href="{{page.cta_link}}" class="cta">{{page.cta}}</a>
+        {% endif %}
     </div>
 </nav>

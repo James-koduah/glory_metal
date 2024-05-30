@@ -5,10 +5,28 @@ footer{
     color: #bbb
 }
 
+#footer_logo{
+    display: flex;
+    justify-content: center;
+}
+#footer_logo img{
+    width: 40px;
+    height: auto;
+}
+
 #footer_header{
     font-size: 7em;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer_header img{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+    object-fit: contain;
 }
 
 #footer_socials{
@@ -68,4 +86,17 @@ footer{
 #footer_credits p span{
     font-weight: 400;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 550px) {
+    #footer_nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_nav_box{
+        width: 50%;
+        min-width: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }

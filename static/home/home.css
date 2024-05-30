@@ -54,6 +54,23 @@
     font-size: 90%;
 }
 
+@media (max-width: 600px) {
+    #hero_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero h1{
+        font-size: 7em;
+        margin-bottom: 25px;
+    }
+    #hero p{
+        font-size: 3.2em;
+    }
+}
+
 
 
 
@@ -108,6 +125,31 @@
     margin-bottom: 15px;
 }
 
+@media (max-width: 800px) {
+    #services_header{
+        text-align: center;
+    }
+    #services_roll{
+        justify-content: center;
+    }
+    .service{
+        width: 70%;
+        margin-bottom: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .service{
+        width: 100%;
+    }
+}
+
+
+
+
 
 .info_div{
     width: 100%;
@@ -147,6 +189,23 @@
 }
 
 
+@media (max-width:800px) {
+    .info_div{
+        flex-direction: column;
+    }
+    .info_img{
+        width: 100%;
+    }
+    .info_text{
+        width: 84%;
+        padding: 40px 8%;
+    }
+    .info_text p{
+        font-size: 3.4em;
+    }
+}
+
+
 
 
 #reviews{
@@ -169,13 +228,29 @@
 .review{
     width: 31%;
     height: 300px;
-    border: 1px #222 solid;
+    border: 1px #888 solid;
     border-radius: 5px;
 }
 
 #reviews .action_button{
     margin: 40px auto 0 auto;
 }
+
+@media (max-width: 800px) {
+    .review{
+        width: 45%;
+    }
+    .review:last-child{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .review{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 
 #contact{

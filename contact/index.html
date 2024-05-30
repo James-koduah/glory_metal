@@ -1,0 +1,58 @@
+---
+title: GLORY METAL WORKS | CONTACT
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include b_head.html %}
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {% include b_nav.html %}
+    <main>
+        <div id="cover"></div>
+        <section id="main">
+            <h1><span>L</span>ET'S <span>S</span>TART!</h1>
+            <div id="socials">
+                <div class="social">
+                    <div class="social_img"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="social_text">
+                        <header>Phone</header>
+                        <p>0559876453</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="social_img"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div class="social_text">
+                        <header>Email</header>
+                        <p>glorymetal@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="half">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="half">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Your Email">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="I'm interested in getting a custom metal..."></textarea>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    {% include footer.html %}
+</body>
+</html>

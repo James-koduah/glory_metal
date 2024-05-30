@@ -96,11 +96,11 @@ img{
 
 
 #nav1{
-    width: 96%;
+    width: 96vw;
     height: 50px;
     position: fixed;
     top: 0;
-    padding: 5px 2%;
+    padding: 5px 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,8 +109,19 @@ img{
     z-index: 100;
 }
 
+
+#nav1_left{
+    display: flex;
+    align-items: center;
+}
+#nav1_left img{
+    height: auto;
+    width: 35px;
+    margin-right: 5px;
+    object-fit: contain;
+}
 #nav1_logo{
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 #nav1_right{
@@ -137,4 +148,44 @@ img{
     border-radius: 3px;
     font-size: 2.5em;
     font-weight: 600;
+}
+
+.nav_dropdown_p{
+    position: relative;
+}
+.nav_dropdown_p:hover .nav_dropdown{
+    display: block;
+}
+
+.nav_dropdown_p header{
+    display: block;
+    font-size: 2.6em;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_dropdown{
+    display: none;
+    position: absolute;
+    width: 130px;
+    padding-left: 40px;
+    background-color: #ede8ed;
+    color: #444;
+    transition: 0.9s;
+}
+.nav_dropdown p{
+    padding: 10px 0;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 700px) {
+    #nav1_right{
+        display: none;
+    }
 }

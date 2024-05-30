@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --ma-bg: #f7f7f7;
+    --text-color: #222;
+    --text-color2: #444;
+    --cabin: Cabin, Arial, Helvetica, sans-serif;
+}
+i{
+    font-size: 150%;
+}
+
+span{
+    font-weight: 400 !important;
+}
+
+body{
+    background-color: var(--ma-bg);
+    color: var(--text-color);
+    font-family: var(--cabin);
+    font-size: 5px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.action_button{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 1px 1px #111;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.action_button ion-icon{
+    font-size: 130%;
+    margin: 0 3px;
+}
+.action_button:hover{
+    background: #000;
+    font-size: 2.45em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav1{
+    width: 96%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    padding: 5px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    color: #f6f6f6;
+    z-index: 100;
+}
+
+#nav1_logo{
+    font-size: 4em;
+}
+
+#nav1_right{
+    display: flex;
+    align-items: center;
+}
+
+#nav1_right a{
+    display: block;
+    font-size: 2.6em;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav1_right .cta{
+    background-color: #f6f6f6;
+    color: #000;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 2.5em;
+    font-weight: 600;
+}

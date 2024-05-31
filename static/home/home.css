@@ -10,7 +10,33 @@
     background: url(/images/balcony2.jpeg) no-repeat;
     background-size: cover;
     z-index: 0;
+    animation: image_roll 140s step-end infinite;
 }
+
+@keyframes image_roll {
+    0%{ 
+        background: url(/images/balcony2.jpeg) no-repeat;
+        background-size: cover;
+    }
+    25%{
+        background: url(/images/structural1.jpg) no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(/images/fence2.jpg) no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url(/images/balcony35.jpg) no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(/images/stairs2.webp) no-repeat;
+        background-size: cover;
+    }
+}
+
+
 #hero_main{
     position: relative;
     width: 90%;
@@ -226,13 +252,27 @@
 }
 
 .review{
-    width: 31%;
-    height: 300px;
-    border: 1px #888 solid;
+    width: 27%;
+    padding: 20px 2% 40px;
+    box-shadow: 0px 0px 2px 2px #ccc;
+    background: #f2f2f2;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.review p{
+    font-size: 3.5em;
+    color: #444;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+.review header{
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
-#reviews .action_button{
+.show_more{
     margin: 40px auto 0 auto;
 }
 
@@ -244,13 +284,54 @@
         display: none;
     }
 }
-@media (max-width: 550px) {
+@media (max-width: 650px) {
     .review{
         width: 100%;
         margin-bottom: 20px;
     }
 }
 
+
+
+#shop{
+    width: 90%;
+    padding: 10px 5% 100px;
+}
+#shop_header{
+    font-size: 6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#shop_roll{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product{
+    width: 23%;
+    margin-bottom: 30px;
+}
+.product_img{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 15px;
+}
+
+.product_text header{
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.product_text p{
+    font-size: 2.7em;
+    color: #333;
+}
+.product_text .action_button{
+    margin-top: 10px;
+    padding: 9px 20px;
+}
 
 
 #contact{

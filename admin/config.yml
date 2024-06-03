@@ -17,8 +17,11 @@ collections:
         name: 'contact'
         file: 'contact/index.html'
         fields:
-          - { label: 'Title', name: 'title', widget: 'hidden', default: 'about' }
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'contact' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'about' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-
-
+      - label: 'Home Page'
+        name: 'Home'
+        file: 'index.html'
+        fields:
+          - { label: 'Body', name: 'body', widget: 'markdown'}

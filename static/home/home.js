@@ -1,1 +1,1 @@
-fullImageDisplay({className: 'p_img'})
+fullImageDisplay({className: 'p_img', slide: true})

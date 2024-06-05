@@ -1,1 +1,1 @@
-fullImageDisplay()
+fullImageDisplay({className: 'p_img'})

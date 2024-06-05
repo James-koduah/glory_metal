@@ -169,7 +169,13 @@
 
 @media (max-width: 600px) {
     .service{
-        width: 100%;
+        width: 90%;
+    }
+    .service_img{
+        height: 170px;
+    }
+    #services{
+        padding-bottom: 70px;
     }
 }
 
@@ -288,6 +294,11 @@
     .review{
         width: 100%;
         margin-bottom: 20px;
+        box-shadow: none;
+        border: 1px #ddd solid;
+    }
+    .review p{
+        font-size: 3em;
     }
 }
 
@@ -318,6 +329,9 @@
     height: 230px;
     margin-bottom: 15px;
 }
+.product_img img{
+    object-fit: contain;
+}
 
 .product_text header{
     font-size: 3em;
@@ -331,6 +345,22 @@
 .product_text .action_button{
     margin-top: 10px;
     padding: 9px 20px;
+}
+
+@media (max-width: 850px) {
+    .product{
+        width: 31%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product{
+        width: 48%;
+    }
+    .product_img{
+        height: 140px;
+    }
 }
 
 

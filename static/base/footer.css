@@ -29,6 +29,19 @@ footer{
     object-fit: contain;
 }
 
+@media (max-width: 550px) {
+    #footer_header{
+        flex-direction: column;
+        font-size: 4.5em;
+        margin-bottom: 50px;
+    }
+    #footer_header img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+}
+
 #footer_socials{
     display: flex;
     justify-content: center;

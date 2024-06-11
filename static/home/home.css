@@ -136,6 +136,7 @@
 
 .service_text{
     width: 100%;
+    min-height: 150px;
 }
 
 .service_text header{
@@ -198,7 +199,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ddd;
+    background-color: #dfdfdf;
 }
 .info_text header{
     font-size: 7em;
@@ -260,8 +261,8 @@
 .review{
     width: 27%;
     padding: 20px 2% 40px;
-    box-shadow: 0px 0px 2px 2px #ccc;
-    background: #f2f2f2;
+    box-shadow: 0px 0px 4px 4px #f1f1f1;
+    background: #f6f6f6;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
